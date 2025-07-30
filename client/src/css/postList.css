@@ -1,0 +1,29 @@
+.button_select{
+    background-color: #99ccff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button_select:hover {
+  background-color: #33ccff  ;
+}
+.post_container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.post_container.selected {
+    border: 2px solid #007bff; /* כחול */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.15);
+}

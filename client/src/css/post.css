@@ -1,0 +1,15 @@
+.button_comments{
+    background-color: #99ccff    ;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button_comments:hover {
+  background-color: #33ccff;
+}

@@ -1,0 +1,88 @@
+.todo_item {
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 3px ;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 350px;
+    height: 150px;
+
+  }
+  
+  .todo_item h5 {
+    margin: 0 0 8px 0;
+    color: #333;
+  }
+  
+  .todo_title {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #444;
+  }
+  
+  .todo_input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .todo_button {
+    padding: 8px 12px;
+    margin: 4px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo_button.save {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .todo_button.save:hover {
+    background-color: #218838;
+  }
+  
+  .todo_button.cancel {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .todo_button.cancel:hover {
+    background-color: #5a6268;
+  }
+  
+  .todo_button.edit {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .todo_button.edit:hover {
+    background-color: #0056b3;
+  }
+  
+  .todo_button.delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .todo_button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  .todo_checkbox {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+  }
+  
