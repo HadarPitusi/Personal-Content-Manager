@@ -1,42 +1,91 @@
-React RESTful API App – Full-Stack Project
-This project is part of a Full-Stack Web Development course. It demonstrates a complete React application that interacts with a RESTful API to manage users, todos, posts, albums, and photos.
+# 📘 React RESTful API App – Full-Stack Project
 
-🔧 Technologies Used
-React (with Hooks, Router, Forms)
+This project is part of a **Full-Stack Web Development course**. It demonstrates a complete React application that interacts with a RESTful API to manage users, todos, posts, albums, and photos.
 
-JSON Server (local fake REST API)
+---
 
-JavaScript (ES6+, async/await, fetch)
+## 🔧 Technologies Used
 
-Local Storage for session management
+- ⚛️ **React** (with Hooks, Router, Forms)
+- 🗄️ **JSON Server** (local fake REST API)
+- ✨ **JavaScript** (ES6+, async/await, fetch)
+- 💾 **Local Storage** – for session management and persistence
+- 🎨 **CSS** – Separate files for clean and modular design
 
-📦 Project Structure
-client/ – React frontend application
+---
 
-server/ – JSON Server backend with a local db.json
+## 📦 Project Structure
 
-node_modules/ – Project dependencies
+project-root/
+├── client/ # React frontend application
+├── server/ # JSON Server backend with db.json
+├── node_modules/ # Project dependencies
+└── README.md
 
-✨ Features
-Login & Register – with validation against users in the JSON Server
 
-Home Page – after login, shows user info and navigation
+---
 
-Todos Page – view, search, sort, add, update, delete todos
+## ✨ Features
 
-Posts Page – manage posts and associated comments
+### 🔐 Login & Register
+- Validates against users in the JSON Server
+- Password is matched against the `website` field
+- Stores session in `localStorage`
 
-Albums Page – view albums, manage photos, lazy-load images
+### 🏠 Home Page
+- Displays user full name
+- Navigation to Info, Todos, Posts, Albums, Logout
 
-Logout – clears session from localStorage
+### ✅ Todos Page
+- View todos list for the logged-in user
+- Search, sort (by ID, title, status)
+- Add / Edit / Delete todos
+- Mark as complete/incomplete
 
-🗂 Routing
-/login – Login page
+### 📝 Posts Page
+- List of user posts with titles and IDs
+- Search posts
+- Add / Edit / Delete posts
+- View post content and related comments
+- Add comment (only by current user)
+- Edit / Delete own comments
 
-/register – User registration
+### 📷 Albums Page
+- View albums by logged-in user
+- Lazy-load photos within albums
+- Add / Edit / Delete photos
+- Add new albums
 
-/home – Main app page
+### 🚪 Logout
+- Clears localStorage and returns to login page
 
-/todos, /posts, /albums – Feature sections
+### 🎨 Styling
+- The entire application is styled using custom CSS files.
+- Each page (Todos, Posts, Albums, Info) uses a dedicated CSS file for modular and consistent styling.
+- The design is clean, responsive, and user-friendly.
+---
 
-Informative URL patterns like /users/1/albums/2/photos/5
+## 🗂 Routing
+
+| Route           | Description                  |
+|----------------|------------------------------|
+| `/login`       | Login page                   |
+| `/register`    | Register new user            |
+| `/home`        | Main application dashboard   |
+| `/todos`       | Todos management             |
+| `/posts`       | Posts and comments section   |
+| `/albums`      | Albums and photo management  |
+| `/users/:id/albums/:aid/photos/:pid` | Deep linking with informative URLs |
+
+---
+
+## 🧪 Notes
+
+- The backend does not persist changes – it’s a mock REST API (based on [JSONPlaceholder](https://jsonplaceholder.typicode.com/))
+- You can run the local server using `json-server --watch db.json --port 3001`
+
+---
+
+## 📜 License
+
+This project is part of an educational course. For academic use only.
